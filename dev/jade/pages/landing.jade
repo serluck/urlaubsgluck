@@ -1,0 +1,19 @@
+extends ../layouts/one_column
+
+block head
+	- pageTitle = 'Landing page title';
+	- pageDescription = 'Landing page description';
+	- pageKeywords = 'landing, html-slicing, psd, template, ua web challenge';
+
+//- block scripts
+//- 	+script(['js/main.js'])
+
+//- content
+block content
+	.textCenter
+		h1.header_text
+			|Share
+			|yourholiday
+			|dreams
+		p And find the perfect partner to fullfill it
+		a(href='#' class='btn header_btn') Find your holiday partner

@@ -1,0 +1,23 @@
+{
+  "name": "urlaubsgluck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-jade": "^1.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.9.3",
+    "gulp": "^3.9.0",
+    "gulp-cache": "^0.3.0",
+    "gulp-cssnano": "^2.0.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-stylus": "^2.0.6",
+    "gulp-tinypng": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

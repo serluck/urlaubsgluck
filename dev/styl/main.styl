@@ -1,0 +1,117 @@
+@import 'lib/nib/'
+// normalize-html5();
+/*Normilize css*/
+normalize-css()
+reset-box-size()
+/*Normilize css*/
+
+// grid system
+$mobile-first = false;
+$max-width=    940px;
+$breakpoints=  992px 768px 676px;
+$desktopGutter = 30;
+$colLeftWidth = (595 + $desktopGutter) * 100 / $max-width;
+$colRightWidth =(282 + $desktopGutter) * 100 / $max-width;
+$gutters=      unit($desktopGutter,'px') 26px 20px 50px;
+$container = {
+  ".container": {
+    gutter: true
+  }
+  ".row": {
+    nested: true
+  }
+}
+$grid = {
+  ".col3": {
+    width: 1/3 null null 1,
+    float: left null null none,
+  },
+  ".col2": {
+    width: 1 null null 1/2,
+    float: none null null left,
+  },
+  ".col12": {
+    width: 1 null null null,
+    float: none null null null
+  },
+  ".contentLeft": {
+  width: unit($colLeftWidth,'%') null 1 null,
+  float: left null null null
+  },
+  ".contentRightCol": {
+    width: unit($colRightWidth,'%') null 1 null,
+    float: right null null null
+  },
+  ".rightColItem": {
+    width: 1 null 1/2 1,
+    float: none left null none
+  },
+  ".copyright": {
+    width: unit(40,"%") null unit(35,"%") 1,
+    float: left null null none
+  },
+  ".payments": {
+    width: unit(60,"%") null unit(65,"%") 1,
+    float: right null null none
+  }
+}
+@import 'rebar.styl';
+@import 'mixin.styl';
+@import 'rupture.styl';
+// import nib libs
+
+.clearfix
+  clearfix()
+
+.textCenter
+    text-align center
+.toRight
+    float: right;
+
+    //export to include
+.header__landing {
+  //bg
+}
+.header__landing {
+  padding-top 56px
+  color: #fff;
+  background #000
+}
+  .header__logo {
+    float:left;
+    font: bold 20px Arial, Helvetica, Montserrat Bold;
+  }
+  .header__login-block {
+    float right
+  }
+    .header__login-block-login,
+    .header__login-block-sign {
+      float left
+      padding 12px 19px
+      font: bold 20px Arial, Helvetica, Montserrat Bold;
+      transition: all .5s
+    }
+    .header__login-block-login {
+      border-radius 18px
+      border 2px solid #000
+    }
+    .header__login-block-sign {
+      border 2px solid
+      border-radius 18px
+    }
+      .header__login-block-login:hover,
+      .header__login-block-sign:hover {
+        background #fff;
+        color:#000;
+      }
+       .header__login-block-login:active,
+      .header__login-block-sign:active {
+        background #DEDDDD;
+        color:#131010;
+      }
+  .header_text {
+
+  }
+.header_text {
+  white-space:pre-line;
+}
