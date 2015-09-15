@@ -364,11 +364,11 @@ th {
 .header__landing {
   padding-top: 56px;
   color: #fff;
-  background: #000;
+  background: #fff url("../images/bg.svg") no-repeat;
 }
 .header__logo {
   float: left;
-  font: bold 20px Arial, Helvetica, Montserrat Bold;
+  font: bold 20px 'Montserrat', sans-serif Arial, Helvetica;
 }
 .header__login-block {
   float: right;
@@ -377,7 +377,7 @@ th {
 .header__login-block-sign {
   float: left;
   padding: 12px 19px;
-  font: bold 20px Arial, Helvetica, Montserrat Bold;
+  font: bold 14px 'Montserrat', sans-serif Arial, Helvetica;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -386,7 +386,7 @@ th {
 }
 .header__login-block-login {
   border-radius: 18px;
-  border: 2px solid #000;
+  border: 2px solid transparent;
 }
 .header__login-block-sign {
   border: 2px solid;
@@ -402,6 +402,106 @@ th {
   background: #dedddd;
   color: #131010;
 }
-.header_text {
+.underHeader {
+  margin: 170px auto;
+}
+.underHeader .header_text {
   white-space: pre-line;
+  font: bold 52px 'Montserrat', sans-serif Arial, Helvetica;
+  text-transform: uppercase;
+  color: #fff;
+}
+.underHeader p {
+  font: 100 24px 'Roboto', sans-serif, Helvetica;
+}
+.underHeader .header_btn {
+  display: inline-block;
+  padding: 14px 22px;
+  margin-top: 35px;
+  border-radius: 24px;
+  font: bold 14px 'Montserrat', sans-serif Arial, Helvetica;
+  text-decoration: none;
+  background: #ff4e50;
+  color: #fff;
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  -ms-transition: background 0.5s;
+  transition: background 0.5s;
+}
+.underHeader .header_btn:hover {
+  background: #ff6061;
+}
+.underHeader .header_btn:active {
+  background: #ff2d2f;
+}
+.hiwBlock h2 {
+  text-align: center;
+  font: bold 22px 'Montserrat', sans-serif Arial, Helvetica;
+  color: #333;
+}
+.hiwBlock .hiwItem {
+  height: 400px;
+}
+.hiwBlock .hiwItem:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -moz--webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -moz--moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -moz--o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -moz--ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(99%, rgba(0,0,0,0.6)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(99%, rgba(0,0,0,0.6)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(99%, rgba(0,0,0,0.6)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(99%, rgba(0,0,0,0.6)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(99%, rgba(0,0,0,0.6)));
+  background: -webkit--webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -webkit--moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -webkit--o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -webkit--ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -o--webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -o--moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -o--o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -o--ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -o-linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -ms--webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -ms--moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -ms--o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -ms--ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -ms-linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+}
+.hiwBlock .hiwItem1 {
+  position: relative;
+  background: url("../images/hiw_1.jpg");
+}
+.hiwBlock .slick-prev {
+  left: 15px;
+}
+.hiwBlock .slick-next {
+  right: 15px;
+}
+.hiwBlock .slick-next:before {
+  content: '';
+  width: 30px;
+  height: 55px;
+  display: inline-block;
+  background: url("../images/arr.png") 30px 0;
+  fill: #bd3535;
+}
+.hiwBlock .slick-prev:before {
+  content: '';
+  width: 30px;
+  height: 55px;
+  display: inline-block;
+  background: url("../images/arr.png");
+  fill: #bd3535;
 }

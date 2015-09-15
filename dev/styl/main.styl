@@ -59,7 +59,9 @@ $grid = {
 @import 'mixin.styl';
 @import 'rupture.styl';
 // import nib libs
-
+// variables
+$fontmont = 'Montserrat', sans-serif Arial, Helvetica
+$fontrob = 'Roboto', sans-serif, Helvetica
 .clearfix
   clearfix()
 
@@ -70,16 +72,13 @@ $grid = {
 
     //export to include
 .header__landing {
-  //bg
-}
-.header__landing {
   padding-top 56px
   color: #fff;
-  background #000
+  background #fff url(../images/bg.svg) no-repeat;
 }
   .header__logo {
     float:left;
-    font: bold 20px Arial, Helvetica, Montserrat Bold;
+    font: bold 20px $fontmont;
   }
   .header__login-block {
     float right
@@ -88,12 +87,12 @@ $grid = {
     .header__login-block-sign {
       float left
       padding 12px 19px
-      font: bold 20px Arial, Helvetica, Montserrat Bold;
+      font: bold 14px $fontmont;
       transition: all .5s
     }
     .header__login-block-login {
       border-radius 18px
-      border 2px solid #000
+      border 2px solid transparent
     }
     .header__login-block-sign {
       border 2px solid
@@ -112,6 +111,85 @@ $grid = {
   .header_text {
 
   }
-.header_text {
-  white-space:pre-line;
+// underHeader
+.underHeader {
+  margin 170px auto
+  .header_text {
+    white-space:pre-line;
+    font bold 52px $fontmont;
+    text-transform uppercase
+    color #fff
+  }
+  p {
+    font 100 24px $fontrob;
+  }
+  .header_btn {
+    display inline-block
+    padding 14px 22px
+    margin-top 35px
+    border-radius 24px
+    font bold 14px $fontmont
+    text-decoration none
+    background #ff4e50
+    color #fff
+    transition background .5s
+    &:hover {
+      background lighten(@background,10%)
+    }
+    &:active {
+      background darken(@background,10%)
+    }
+  }
+}
+
+//hiw block
+.hiwBlock {
+  h2 {
+    text-align center
+    font bold 22px $fontmont
+    color #333333
+  }
+  .hiwItem {
+    height 400px
+    &:before {
+      content ''
+      position absolute
+      width 100%
+      height 100%
+      background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 99%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(99%,rgba(0,0,0,0.6)));
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 99%);
+      background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 99%);
+      background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 99%);
+      background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 99%);
+      // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 );
+
+    }
+  }
+  .hiwItem1 {
+    position relative
+    background url(../images/hiw_1.jpg)
+  }
+  .slick-prev {
+      left: 15px;
+  }
+  .slick-next {
+      right: 15px;
+  }
+  .slick-next:before {
+      content: '';
+      width: 30px;
+      height: 55px;
+      display: inline-block;
+      background: url(../images/arr.png) 30px 0;
+      fill: #BD3535;
+  }
+  .slick-prev:before {
+      content: '';
+      width: 30px;
+      height: 55px;
+      display: inline-block;
+      background: url(../images/arr.png);
+      fill: #BD3535;
+  }
 }
